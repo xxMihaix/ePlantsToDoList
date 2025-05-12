@@ -8,6 +8,22 @@ body{
     margin: 0px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+}
+
+main {
+    flex: 1; /* ca să ocupe tot spațiul rămas */
+}
+
 #title{
     color: green;
     font-size: 35px;
@@ -153,6 +169,6 @@ footer div{
     padding: 2px;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: sticky;
     bottom: 0;
 }
