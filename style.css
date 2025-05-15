@@ -31,89 +31,104 @@ main {
     text-align: center;
 }
 
-#principal-container{
+#title-create{
+    font-size: 30px;
+    text-align: center;
+}
+
+/*--
+#container{
+    max-width: 1400px;
+    height: auto;
+    margin: 80px;
+    display: grid;
+    /* grid-template-columns: 400px 200px;
+    gap: 25px;
+    border: 3px solid green;
+    border-radius: 15px;
+    padding: 20px;
+}
+----------------------------------- */
+
+#first-principal-container{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#container{
-    max-width: 1400px;
-    margin: 80px;
-    display: grid;
-    grid-template-columns: 400px 200px;
-    gap: 25px;
+#second-principal-container{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
-@media(max-width: 750px){
-    #container{
-        margin: 20px;
-    }
+#first-container{
+    border: 3px solid green;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 10px;
 }
 
-@media(max-width: 690px){
-    #container{
-        grid-template-columns: 300px 150px;
-    }
+#second-container{
+    border-bottom: 3px solid green;
+    border-top: 3px solid green;
+    padding: 15px;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-@media(max-width: 500px){
-    #container{
-        grid-template-columns: 250px 120px;
-    }
-}
-
-@media(max-width: 430px){
-    #container{
-        grid-template-columns: 200px 110px;
-    }
-}
-
-@media(max-width: 360px){
-    #container{
-        grid-template-columns: 160px 100px;
-    }
-}
-
-.first-item-interface{
-    grid-column: 1;
+#your-list{
     color: green;
-    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
 }
 
-.second-item-interface{
-    grid-column: 2;
+label{
+    color: green;
+    font-size: 20px;
+}
+
+#first-input-container{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+
+
+
+#submit{
     color: white;
+    font-size: 15px;
     font-weight: bold;
-    font-size: 17px;
     background-color: green;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.second-item-interface:hover{
-    cursor: pointer;
-}
-
-.first-item{
-    grid-column: 1;
-    text-align: center;
-    font-weight: bold;
+#title-create{
     color: green;
-    font-size:20px;
-    margin: 0px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 0px;
 }
 
-.second-item{
-    grid-column: 2;
-    color: white;
-    font-weight: bold;
-    font-size: 17px;
-    background-color: red;
-    border: none;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 ::placeholder{
@@ -172,3 +187,81 @@ footer div{
     position: sticky;
     bottom: 0;
 }
+
+
+@media(min-width: 630px){
+    #center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #submit{
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/*-----------------------------------------*/
+
+/*------------------------------------------------*/
+
+.day-hour{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.day-hour-content{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.activity{
+    border: 2px solid green;
+    border-radius: 15px;
+    padding: 10px;
+    height: 140px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.costum{
+    text-align: center;
+    color: white;
+    color: green;
+    font-weight: bold;
+}
+
+.activ{
+    font-size: 25px;
+    margin: 0px;
+}
+
+
+
+
+
+
+.remove{
+    color: white;
+    background-color: rgb(229, 8, 8);
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 55px;
+    padding-right: 55px;
+
+}
+
+
+/*------------------------------------------------*/
